@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            
+            body{
+                background-color: rgba(27, 13, 34, 0.85);
+            }
+
+            h1{
+                font-size: 2rem;
+                color: white;
+                text-align: center;
+                letter-spacing: 0.5rem;
+                line-height: 1.4;
+                margin-top: 50px;
+            }
+
+            .maindiv{
+                width: 70%;
+                height: 450px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url('svv_01.jpg');
+                background-size: 100% 100%; 
+                box-shadow: 1px 2px 10px 5px white;
+                animation: SVV 10s infinite linear;
+            }
+
+            @keyframes SVV{
+                0%{background-image: url('svv_01.jpg');}
+                35%{background-image: url('svv_2.jpg');}
+                75%{background-image: url('h3.jpg');}
+            }
+
+            .abc{
+                padding-left: 215px;
+                padding-top: 508px;
+                color: white;
+            }
+
+    </style>
+
+</head>
+<body>
+    <h1>SVV</h1>
+    <div class="maindiv">
+
+    </div>
+    <!-- <p class="abc">Here is the examaple of animation</p> -->
+</body>
+</html>

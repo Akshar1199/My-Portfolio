@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    /* body {
+        background-color: rgb(33, 4, 4);
+    } */
+
+    /* div {
+         background-image: url('white_star.webp');
+        background-color: white;
+        background-repeat: no-repeat;
+        margin-left: 355px;
+        margin-top: 85px;
+        height: 550px;
+        width: 835px;
+        border-radius: 15px;
+    } */
+
+    .contact-section h1 {
+        text-align: center;
+        padding-top: 65px;
+        color: #ddd;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "montserrat", sans-serif;
+    }
+
+    .contact-section {
+        background: url('black.webp') center;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 0;
+    }
+
+    .border {
+        width: 100px;
+        height: 10px;
+        background: #34495e;
+        margin: 40px auto;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .contact-form-text {
+        /* display: block; */
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px 0;
+        border: 0;
+        background: #111;
+        padding: 20px 40px;
+        /* outline: none; */
+        color: #ddd;
+        transition: 0.5s;
+        border-radius: 50px;
+    }
+
+    .contact-form-text:hover {
+        box-shadow: 0 0 10px 4px #34495e;
+    }
+
+
+
+    textarea.contact-form-text {
+        resize: vertical;
+        height: 150px;
+    }
+
+    .contact-form-btn {
+        float: right;
+        border: 0;
+        background: #34495e;
+        color: #fff;
+        padding: 12px 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 25px;
+        transition: 0.5s;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-ak {
+        float: left;
+        text-decoration: none;
+        border: 0;
+        background: #34495e;
+        color: #fff;
+        padding: 10px 40px;
+        margin-top: 25px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+    .contact-form-btn:hover {
+        background: #2980b9;
+    }
+
+    .contact-form-ak:hover {
+        background: #2980b9;
+    }
+</style>
+
+<body>
+
+    <!-- <div>
+        <h1>CONTACT ME</h1>
+    </div> -->
+
+    <!-- <form action="mailto:aksharparekh1199@gmail.com" method="post" enctype="text/plain">
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="" required><br>
+        <label for="stuid">Student Id:</label><br>
+        <input type="text" id="stuid" name="stuid" value="" required><br><br>
+
+    </form> -->
+
+    <!-- <form action="mailto:aksharparekh1199@gmail.com" method="post" enctype = "text/plain"></form> -->
+    <div class="contact-section">
+        <h1>Contact Me</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="mailto:aksharparekh1199@gmail.com" method="post" enctype="text/plain">
+            <label for="name"><b>Name</b></label>
+            <br>
+            <input type="text" id="name" name="name" class="contact-form-text" placeholder="Enter Your Name" required>
+            <br>
+            <label for="email"><b>Email</b></label>
+            <br>
+            <input type="email" name="email" id="email" class="contact-form-text" placeholder="Enter Your Email"
+                required>
+            <br>
+            <label for="contact"><b>CONTACT</b></label>
+            <br>
+            <input type="varchar" name="contact" id="contact" class="contact-form-text"
+                placeholder="Enter Your Phone Number">
+            <br>
+
+            <!-- <label for="Branch">Choose a Branch:</label>
+            <select name="Branch" id="Branch" >
+                <option value="ce" class="contact-from-text">CE</option>
+                <option value="it">IT</option>
+                <option value="ec">EC</option>
+            </select> -->
+
+            <label for="msg">Message</label>
+            <br>
+
+            <input type="textarea" name="msg" id="msg" class="contact-form-text" placeholder="Your Message"></textarea>
+            <br>
+
+            <input type="submit" class="contact-form-btn" value="Send">
+            <a href="home.html" class="contact-form-ak">Back</a>
+
+            <!-- </form> -->
+    </div>
+
+    </form>
+
+</body>
+
+</html>

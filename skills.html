@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a7aca;
+        }
+
+        .wrapper {
+            width: 40%;
+            float: center;
+            min-width: 570px;
+            position: absolute;
+            transform: translate(-50% -50%);
+            left: 30%;
+            top: 15%;
+            /* bottom: 25%; */
+            padding-bottom: 80px;
+        }
+
+        .container {
+            width: 100%;
+            background-color: white;
+            padding: 30px 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2)
+        }
+
+        .contaner * {
+            font-family: sans-serif;
+            color: black;
+            font-weight: 500;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            font-size: 33px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .details {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            position: relative;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        .bar div {
+            position: relative;
+            width: 0%;
+            height: 9px;
+            border-radius: 10px;
+            background-color: #0d96e0;
+        }
+
+        .skills:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        #html-bar {
+            animation: html-fill 2s forwards;
+        }
+
+        @keyframes html-fill {
+            100% {
+                width: 70%;
+            }
+        }
+
+        #css-bar {
+            animation: css-fill 2s forwards;
+        }
+
+        @keyframes css-fill {
+            100% {
+                width: 80%;
+            }
+        }
+
+        #c-bar {
+            animation: c-fill 2s forwards;
+        }
+
+        @keyframes c-fill {
+            100% {
+                width: 70%;
+            }
+        }
+
+        #cpp-bar {
+            animation: cpp-fill 2s forwards;
+        }
+
+        @keyframes cpp-fill {
+            100% {
+                width: 72%;
+            }
+        }
+
+        #commu-bar {
+            animation: commu-fill 2s forwards;
+        }
+
+        @keyframes commu-fill {
+            100% {
+                width: 75%;
+            }
+        }
+
+        #team-bar {
+            animation: team-fill 2s forwards;
+        }
+
+        @keyframes team-fill {
+            100% {
+                width: 80%;
+            }
+        }
+
+        #dance-bar {
+            animation: dance-fill 2s forwards;
+        }
+
+        @keyframes dance-fill {
+            100% {
+                width: 85%;
+            }
+        }
+
+        #sports-bar {
+            animation: sports-fill 2s forwards;
+        }
+
+        @keyframes sports-fill {
+            100% {
+                width: 90%;
+            }
+        }
+
+        .contact-form-ak {
+            float: left;
+            text-decoration: none;
+            border: 0;
+            background: #194564;
+            font-size: 20px;
+            color: #fff;
+            padding: 10px 40px;
+            margin-top: 25px;
+            margin-left: 28px;
+            margin-top: 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        a:hover{
+            background-color: #333;
+        }
+
+        /* @media screen and (max-width: 400px) {
+            .wrapper {}
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h2>Technical skills</h2>
+
+
+            <!--1st skill bar-->
+
+            <div class="skills">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>70%</span>
+                </div>
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+
+            <!--2nd skill bar-->
+
+            <div class="skills">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>80%</span>
+                </div>
+                <div class="bar">
+                    <div id="css-bar"></div>
+                </div>
+            </div>
+
+            <!--3rd skill bar-->
+
+            <div class="skills">
+                <div class="details">
+                    <span>C Programing Language</span>
+                    <span>70%</span>
+                </div>
+                <div class="bar">
+                    <div id="c-bar"></div>
+                </div>
+            </div>
+
+            <!--4th skill bar-->
+
+            <div class="skills">
+                <div class="details">
+                    <span>C++ Programing Language</span>
+                    <span>72%</span>
+                </div>
+                <div class="bar">
+                    <div id="cpp-bar"></div>
+                </div>
+            </div>
+
+            <!-- Another Skills -->
+
+            <h2>Professional Skills</h2>
+
+            <div class="skills">
+                <div class="details">
+                    <span>Communication</span>
+                    <span>75%</span>
+                </div>
+                <div class="bar">
+                    <div id="commu-bar"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="details">
+                    <span>Team Work</span>
+                    <span>80%</span>
+                </div>
+                <div class="bar">
+                    <div id="team-bar"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="details">
+                    <span>Dance</span>
+                    <span>85%</span>
+                </div>
+                <div class="bar">
+                    <div id="dance-bar"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="details">
+                    <span>Sports</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="sports-bar"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="home.html" class="contact-form-ak">Back</a>
+
+</body>
+
+</html>
